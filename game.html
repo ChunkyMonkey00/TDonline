@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tower Defense Game</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="room-code" id="room-code">
+        Room Code: <span id="code"></span>
+      </div>
+      <div id="role">Role:</div>
+      <div class="game-name">Tower Defense Game</div>
+    </div>
+    <div class="container">
+      <div class="left-nav">
+  <h3>Select Towers</h3>
+  <div id="towerContainer"></div> <!-- Placeholder for dynamic tower buttons -->
+</div>
+
+      <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- Chat Box -->
+    <div id="chatBox">
+      <div id="chatLog"></div>
+      <input type="text" id="message" placeholder="Type a message..." />
+      <button id="sendMessage">Send</button>
+    </div>
+
+    <script src="https://unpkg.com/piesocket-js@5"></script>
+    <script src="src/defenseTowers.js"></script>
+    <script src="src/attackEnemies.js"></script>
+    <script src="src/game.js"></script>
+  </body>
+</html>
