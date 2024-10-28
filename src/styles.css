@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: relative; /* Allow positioning of child elements */
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+.container {
+  display: flex;
+  height: calc(
+    100vh - 50px
+  ); /* Adjust to fill the viewport minus navbar height */
+}
+
+.left-nav {
+  width: 20%;
+  background-color: #f4f4f4;
+  padding: 50px;
+  padding-top: 10px;
+  border-right: 2px solid #ccc;
+}
+
+.left-nav h3 {
+  margin: 0 0 10px;
+}
+
+.tower-btn {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.tower-btn:hover {
+  background-color: #0056b3;
+}
+
+canvas {
+  height:100%;
+  width:80%;
+  background-color: #eaeaea;
+  border: 2px solid darkGreen;
+  margin-bottom: 220px; /* Leave space for the chat box */
+}
+
+#chatBox {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px; /* Set a width for the chat box */
+  max-height: calc(100vh - 100px); /* Make it extend to just below the navbar */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2; /* Ensure it appears above other elements */
+}
+
+#chatLog {
+  max-height: 180px; /* Set height for chat log */
+  overflow-y: auto; /* Enable scrolling */
+}
+
+#message {
+  width: calc(100% - 80px); /* Fill width minus button space */
+  margin-right: 5px;
+}
+
+#sendMessage {
+  width: 70px; /* Fixed width for the send button */
+}
+
+.tower-info {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
