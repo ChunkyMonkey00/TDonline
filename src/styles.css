@@ -89,3 +89,26 @@ canvas {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+
+.enemy-info {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ffe5e5; /* Light red background */
+  border: 1px solid #f5c6c6; /* Slightly darker border */
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.enemy-btn {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #dc3545; /* Bootstrap red */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.enemy-btn:hover {
+  background-color: #b21f2d; /* Darker red on hover */
+}
